@@ -1,0 +1,37 @@
+.TH _printf 3 "21 March 2017" "0.07" "man page for printf"
+
+.SH NAME
+
+printf
+
+.SH SYNOPSIS
+
+printf project for Holberton School
+.SH DESCRIPTION
+printf is a control parameter that is used by a group of functions in the string format string are outputted with the conversion formattersm such as
+%f(float), %s(string), %d(decimal interger), %i (integer). This version of printf does not include buffer
+handling.
+
+.SS RETURN VALUE
+Returns the amount of characters outputed. NULL is returned if value 
+is lower than one.
+
+.SH OPTIONS
+Flag characters aren't handled with the printf function.
+
+.SH BUGS
+The printf function doesn't handle multiple percent %) signs. When concurrent
+percent signs are inputed the output is:
+
+Error.
+
+Currently the printf function has a return value of void.
+
+%s, %i, and %d are currently the formatters that work for the printf function.
+
+.SH CONT.
+.B For information about formatting, documenting and styling please refer to.
+https://github.com/holbertonschool/Betty/wiki
+
+.SH AUTHOR
+Chris Turner, Max Johnson
