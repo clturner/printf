@@ -96,11 +96,11 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			putchar(format[i]);
+			_putchar(format[i]);
 		}
 		i++;
 	}
 	va_end(ap);
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
