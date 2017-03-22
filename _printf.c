@@ -40,21 +40,42 @@ void print_string(va_list ap)
 	}
 }
 
+void print_int_helper(int n)
+{
+
+	int a;
+/**	printf("test%d\n", n);*/
+	if (n < 0)
+	{
+		n = n * (-1);
+		_putchar('-');
+	}
+	if (n > 9)
+        {
+		a = n / 10;
+
+		n = n - (10 * a);
+		print_int_helper(a);
+		_putchar('0' + n);
+        }
+        else
+        {
+                _putchar('0' + n);
+                return;
+        }
+}
 /**
  * print_int - prints an integer to stdout
  * @n: integer to print to stdout
  * Return: none
  */
-void print_int(int n)
+void print_int(va_list ap)
 {
-	if (n > 9)
-	{
-		int a = n / 10;
+	int n;
 
-		n = n - (10 * a);
-		print_int(a);
-	}
-	putchar('0' + n);
+	n  = va_arg(ap, int);
+	print_int_helper(n);
+
 }
 
 /**
@@ -101,6 +122,5 @@ int _printf(const char *format, ...)
 		i++;
 	}
 	va_end(ap);
-	_putchar('\n');
 	return (0);
 }
