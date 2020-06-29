@@ -6,7 +6,7 @@ printf
 
 .SH SYNOPSIS
 
-printf project for Holberton School
+printf project for sfcode
 .SH DESCRIPTION
 printf is a control parameter that is used by a group of functions in the string format string are outputted with the conversion formattersm such as
 %f(float), %s(string), %d(decimal interger), %i (integer). This version of printf does not include buffer
@@ -31,7 +31,7 @@ Currently the printf function has a return value of void.
 
 .SH CONT.
 .B For information about formatting, documenting and styling please refer to.
-https://github.com/holbertonschool/Betty/wiki
+https://github.com/sfcode/Betty/wiki
 
 .SH AUTHOR
 Chris Turner, Max Johnson
