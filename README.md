@@ -3,7 +3,7 @@
 # Custom Printf
 > The purpose of this project is to recreate a mock version of the unix printf function
 
-Students of the Holberton School, a two year software engineering school in San Francisco, California were placed with 
+Students of the sfcode , a software engineering school in San Francisco, California were placed with 
 the task of recreating printf with certain restraints.
 
 ## Function
